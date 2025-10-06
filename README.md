@@ -46,10 +46,6 @@ This project is developed through a series of milestones. Each has a dedicated f
     * **Objective:** Build a pipeline to generate and compare line-by-line explanations for Python code snippets using a template-driven approach.
     * **Status:** ✅ **Complete**
 
-* ### `Milestone 2: Code Generation Engine`
-    * **Objective:** *(To be defined)*
-    * **Status:** ⚪ **Planned**
-
 
 
 ## 4. Technology Stack
