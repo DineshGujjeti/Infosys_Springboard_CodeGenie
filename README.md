@@ -1,22 +1,68 @@
 # Infosys_Springboard
 Developing 'CodeGenie,' an AI assistant for code explanation and generation, leveraging advanced NLP techniques. An Infosys Springboard project.
-# Infosys Springboard - Milestone 1: Code Explainer
 
-This repository contains the implementation for the milestone of the CodeGenie project. The objective is to build a pipeline that analyzes Python code snippets, generates semantic embeddings using various transformer models, and visually compares their understanding of the code.
 
----
 
-## Approach and Methodology
+# Infosys CodeGenie Project
+### An AI-Powered Code Explainer and Generator
 
-The project was executed following a structured pipeline:
+![Status](https://img.shields.io/badge/status-in_progress-yellow)
+![Python](https://img.shields.io/badge/python-3.9%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-1.  **Data Preparation**: A diverse set of 10+ Python code snippets was curated. This collection includes simple functions, class definitions, file I/O operations, and examples using libraries like Pandas and NumPy to ensure a comprehensive evaluation of the models.
 
-2.  **AST Parsing**: Python's built-in `ast` (Abstract Syntax Tree) module was used to parse each snippet. This allowed for the programmatic extraction of key structural elements like function names, class names, and imported libraries, providing a structured summary of the code's components.
 
-3.  **Embedding Generation**: The `sentence-transformers` library was utilized to load three distinct pretrained models: `all-MiniLM-L6-v2`, `all-distilroberta-v1`, and `all-mpnet-base-v2`. Each model processed the raw code snippets to generate high-dimensional vector embeddings that capture their semantic meaning.
+## 1. Project Overview
 
-4.  **Visualization and Comparison**: To visually compare the models' understanding of the code, the dimensionality of the embeddings was reduced to 2D using **PCA** (Principal Component Analysis). Scatter plots were then generated for each model, illustrating how they clustered the different code snippets in a 2D space.
+Welcome to the repository for the **CodeGenie** project, developed as part of the Infosys Springboard program. This project is an exploration into building an intelligent AI assistant designed to provide nuanced, context-aware analysis and generation of software code.
 
----
+#### The Problem
+Modern development relies heavily on understanding large, complex codebases. While general-purpose AI assistants are powerful, they often lack the specific context of a given project, leading to generic suggestions. Furthermore, different AI models can provide varied explanations for the same code, and understanding these differences is key to leveraging them effectively.
+
+#### The Solution
+CodeGenie is designed to address these challenges. It's a Python-based tool that will ultimately be able to:
+* **Explain code** with a deep understanding of its structure and purpose.
+* **Compare** the analytical "personas" of different NLP models.
+* **(Future Goal)** **Generate** new, contextually relevant code snippets.
+
+
+
+## 2. Key Features (Current)
+
+As of Milestone 1, the project has the following capabilities:
+
+* **Object-Oriented Design**: A modular and scalable `CodeExplainer` class encapsulates all core logic.
+* **Line-by-Line Code Analysis**: Processes Python scripts line by line to generate targeted explanations.
+* **Comparative Model Simulation**: Utilizes a template-based system to simulate and compare the distinct explanatory styles of three different NLP models (MiniLM, DistilRoBERTa, MPNet).
+* **Structured Reporting**: Leverages the `pandas` library to generate clean, readable, side-by-side comparison tables of the model outputs.
+
+
+
+## 3. Repository Structure & Milestones
+
+This project is developed through a series of milestones. Each has a dedicated folder containing its specific code, documentation, and findings.
+
+* ### [Milestone 1: Code Explainer](./Milestone1/)
+    * **Objective:** Build a pipeline to generate and compare line-by-line explanations for Python code snippets using a template-driven approach.
+    * **Status:** ✅ **Complete**
+
+* ### `Milestone 2: Code Generation Engine`
+    * **Objective:** *(To be defined)*
+    * **Status:** ⚪ **Planned**
+
+
+
+## 4. Technology Stack
+
+This project utilizes a modern stack of data science and Python libraries:
+
+* **Primary Language:** **Python**
+* **Core Libraries:**
+    * **Pandas:** For data manipulation and creating structured comparison tables.
+    * **Sentence-Transformers:** For loading and interfacing with pretrained NLP models.
+* **Code Analysis Tools:**
+    * **AST (Abstract Syntax Tree):** For programmatic analysis of Python code structure.
+    * **Tokenize:** For breaking code down into its fundamental lexical units.
+* **Development Environment:** **Google Colaboratory**
+
 
