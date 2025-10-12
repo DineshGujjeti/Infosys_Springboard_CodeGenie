@@ -29,13 +29,12 @@ This project implements a benchmarking system for code generation AI models usin
 This project provides a framework to systematically compare state-of-the-art code generation models on standardized prompts and metrics. The interactive UIs aid in detailed inspection, while visualizations facilitate quick performance comparisons. It serves as a baseline for further research and improvements in AI-assisted coding.
 
 
-## Usage Instructions
+## View and Run on Google Colab
 
-### 1. Open in Colab
-- Open the notebook `Milestone2.ipynb` in [Google Colab]([https://colab.research.google.com/](https://colab.research.google.com/drive/1_7hT3piuAiKIs6GUvGox0FmOIB1NWSlg?usp=sharing).
-- Run all cells to generate outputs.
+💻 **Interactive Version:** You can view and run the notebook with all outputs on [Google Colab here](https://colab.research.google.com/drive/1_7hT3piuAiKIs6GUvGox0FmOIB1NWSlg?usp=sharing).
 
-- ## **Outputs**
+
+- ## **Code Outputs**
 - **Setup and Installations:**
 - <img width="789" height="89" alt="image" src="https://github.com/user-attachments/assets/85adb540-0161-46e1-b165-0552b9d1c368" />
 
