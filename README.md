@@ -45,10 +45,10 @@ This project is developed through a series of milestones. Each has a dedicated f
 * ### [Milestone 1: Code Explainer](./Milestone1/)
     * **Objective:** Build a pipeline to generate and compare line-by-line explanations for Python code snippets using a template-driven approach.
     * **Status:** ✅ **Complete**
-    *  ### [Milestone 2: Code Generator](./Milestone2/)
+*  ### [Milestone 2: Code Generator](./Milestone2/)
     * **Objective:** Develop a comprehensive benchmarking framework to evaluate and compare pretrained code generation models on diverse prompts using complexity, maintainability, and code size metrics with interactive visualization and analysis.
     * **Status:** ✅ **Complete**
-    *  ### [Milestone 3:  AI Explainer and Code Generator ](./Milestone3/)
+*  ### [Milestone 3:  AI Explainer and Code Generator ](./Milestone3/)
     * **Objective:** establish a fully functional, secure, and performant web application environment that hosts LLMs locally on a GPU (via Google Colab), enabling advanced code generation and analysis features with comprehensive user authentication.
     * **Status:** ✅ **Complete**
 
