@@ -51,7 +51,9 @@ This project is developed through a series of milestones. Each has a dedicated f
 *  ### [Milestone 3:  AI Explainer and Code Generator ](./Milestone3/)
     * **Objective:** establish a fully functional, secure, and performant web application environment that hosts LLMs locally on a GPU (via Google Colab), enabling advanced code generation and analysis features with comprehensive user authentication.
     * **Status:** ✅ **Complete**
-
+*  ### [Milestone 4:  CodeGenie: AI-Powered Code Generation & Analysis Platform ](./Milestone4/)
+    * **Objective:** To build a secure, multi-user web app that dynamically loads LLMs to generate, explain, and analyze code, featuring an admin dashboard and user feedback system.
+    * **Status:** ✅ **Complete**
 
 
 ## 4. Technology Stack
