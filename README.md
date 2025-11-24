@@ -4,6 +4,16 @@ Helping developers understand code the way humans do — with clarity, structure
 
 ---
 
+## 🔗 Quick Links
+
+| Category            | Link          |
+|--------------------|---------------|
+| 🎥 Demo Video      | Coming Soon   |
+| 🐳 Docker Support | Yes           |
+| 💡 Supported Languages | Python · JavaScript · SQL |
+
+---
+
 ## 🌟 Introduction
 
 Modern AI code assistants are powerful, but they all share one fundamental flaw:  
