@@ -100,7 +100,7 @@ This is frustrating — especially for beginners or teams working with unfamilia
 
 > **“What if AI could read your entire codebase before answering?”**
 
-With RAG, vector search, AST parsing, and multi-model support, CodeGenie brings project-level intelligence into explanations, giving users:
+AST parsing, and multi-model support, CodeGenie brings project-level intelligence into explanations, giving users:
 
 - Accurate code explanations grounded in real project files  
 - Cleaner and context-aware code generation  
@@ -157,18 +157,19 @@ A high-level overview:
 - **Models**  
   Multi-language support via transformer-based models.
   
- **SQLite Database**  
+ - **SQLite Database**  
   Stores users, history, feedback, and admin data.
   
-- **4-bit Quantization**  
+- **4-bit Quantization**
   Models run efficiently on low-memory machines & Google Colab.
 
-- **System Architecture**
+- **System Architecture:**
+  
 - <img width="1871" height="598" alt="image" src="https://github.com/user-attachments/assets/3cf20a45-f609-4c9a-ac7a-5483c1fb89f6" />
 
+- **ER Diagram**
 
--**ER Diagram**
--<img width="669" height="895" alt="image" src="https://github.com/user-attachments/assets/2370eebf-47c6-498b-ab68-2302e7d6583d" />
+- <img width="669" height="895" alt="image" src="https://github.com/user-attachments/assets/2370eebf-47c6-498b-ab68-2302e7d6583d" />
 
 ---
 
@@ -211,8 +212,7 @@ CodeGenie/
 ├── backend/
 │   ├── auth.py              # JWT auth + role mgmt + OTP
 │   ├── generator.py         # Code generation engine
-│   ├── explainer.py         # RAG + AST code explanation
-│   ├── rag_core.py          # Retrieval logic, embeddings, vector DB
+│   ├── explainer.py         # AST code explanation
 │   ├── ast_engine.py        # Python AST parser
 │   ├── history.py           # Query logging
 │   ├── feedback.py          # Ratings + analytics
@@ -258,7 +258,7 @@ streamlit run app.py
 
 2. **Choose a Mode**
    - **Generate Code** — Convert natural language into executable code  
-   - **Explain Code** — Understand any snippet with RAG + AST assistance
+   - **Explain Code** — Understand any snippet with AST assistance
 
 3. **Pick a Language**
    - Python  
@@ -338,7 +338,6 @@ The Admin Dashboard provides insights such as:
 
 _Actual UI screenshots will be added soon._
 
-Suggested screenshots to include:
 
 - Login & Signup  
 - Main Dashboard  
@@ -368,7 +367,7 @@ Future enhancements planned:
 
 | Name | Role | Responsibilities |
 |------|------|------------------|
-| Add Name | ML Engineer | RAG pipeline, model integration, quantization |
+| Add Name | ML Engineer | model integration, quantization |
 | Add Name | Backend Developer | APIs, database, auth, OTP system |
 | Add Name | Frontend Developer | Streamlit UI & user experience |
 | Add Name | Documentation Lead | README, architecture diagrams |
