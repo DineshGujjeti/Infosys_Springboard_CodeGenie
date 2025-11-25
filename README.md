@@ -1,3 +1,5 @@
+<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/051c4dd1-868f-412a-814f-d907e7122ea3" />
+
 # 🧞‍♂️ CodeGenie
 ### AI Explainer and Code Generation Platform
 
