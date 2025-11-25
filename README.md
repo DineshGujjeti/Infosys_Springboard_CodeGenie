@@ -1,4 +1,13 @@
-# 🧠 CodeGenie  
+# 🧞‍♂️ CodeGenie
+### AI Explainer and Code Generation Platform
+
+> **Convert ideas into clean code and code into clear understanding.**
+
+[![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit)](https://streamlit.io/)
+[![Python](https://img.shields.io/badge/Backend-Python-3776AB?style=for-the-badge&logo=python)](https://www.python.org/)
+[![MongoDB](https://img.shields.io/badge/Database-MongoDB_Atlas-47A248?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/)
+[![Hugging Face](https://img.shields.io/badge/Models-Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface)](https://huggingface.co/)
+
 _Futuristic AI Code Explainer & Intelligent Code Generation Platform_  
 Helping developers understand code the way humans do — with clarity, structure, and context.
 
@@ -63,25 +72,15 @@ Initially built during an Infosys Springboard Internship, CodeGenie has evolved 
 
 # 📖 About the Project
 
-**CodeGenie** is an AI-powered coding assistant built to make code feel less like a puzzle and more like a story you can actually follow.
+**CodeGenie** is an AI-powered software development assistant designed to help beginners and engineers write efficient code and understand complex programming concepts.
 
-Most tools can tell you what a line of code *does* in isolation. CodeGenie goes further — it focuses on **structure, intent, and learning**, breaking down snippets into human-readable logic, complexity, and flow. It also helps you generate new code that is clean, readable, and ready to run.
+**Problem Statement:**
+Programming can be hard for beginners because understanding logic takes time and writing optimized code requires expertise.
 
-Originally developed as part of the **Infosys Springboard Internship**, CodeGenie has grown into a compact but powerful platform for:
-
-- Students trying to understand how real code works  
-- Developers onboarding into unfamiliar projects  
-- Trainers and educators who need explainable examples  
-- Engineers who want quick, reliable code generation and explanation in one place  
-
-At its core, CodeGenie blends:
-
-- **AST-based Python analysis** for deep structural understanding  
-- **Specialized models** for Python, JavaScript, and SQL  
-- **Secure authentication & role-based access**  
-- **Streamlit UI** for a smooth, interactive experience  
-- **Analytics & feedback loops** to track quality and usage over time  
-- **4-bit model quantization** for efficient deployment on limited hardware / Google Colab  
+**CodeGenie removes these barriers by:**
+* Generating runnable code from plain English prompts.
+* Explaining code logic using AST parsing (Python) and AI (other languages).
+* Providing an interactive chat interface for general programming queries.
 
 ---
 
@@ -109,144 +108,95 @@ The result is an assistant that feels more intentional, more transparent, and mo
 
 # 🚀 Key Features
 
-## 👤 User Capabilities
+### User Capabilities
+| Module | Description | Status |
+| :--- | :--- | :--- |
+| **Secure Authentication** | JWT login, Google OAuth integration, and OTP-based password recovery via Email. | ☑ |
+| **Code Generator** | Converts natural language prompts into Python, JavaScript, SQL, C++, etc. | ☑ |
+| **Code Explainer** | Parses Python using AST for structural breakdown and AI for logic explanation. | ☑ |
+| **AI Chatbot** | Context-aware general coding assistant (powered by Phi-2). | ☑ |
+| **Workspace History** | Automatically saves all generations and explanations to MongoDB. | ☑ |
+| **File Management** | Upload and manage coding files (Auto-cleanup for old files). | ☑ |
 
-
-| Module                    | Description |
-|---------------------------|-------------|
-| 🔐 **Secure Authentication** | JWT-based login, refresh tokens, and protected routes |
-| 👥 **User Roles & Profiles** | User/Admin roles with basic profile & preference management |
-| ✍️ **Text → Code Generator** | Turn plain English into runnable **Python / JavaScript / SQL** code |
-| 🧩 **Code → Explanation** | Explain code step-by-step with logic, structure, and complexity |
-| 🧠 **AST-Powered Python Insights** | Python code is parsed structurally for richer explanations |
-| 🔀 **Mode Toggle** | Seamlessly switch between **Generate** and **Explain** modes in the UI |
-| ⭐ **Ratings & Feedback** | Feedback form on every output to rate quality and add comments |
-| 🕘 **User History & Logs** | Track all queries, outputs, timestamps, languages, and modes |
-| 🔏 **Profile & Password Management** | Update profile; change password with re-authentication |
-| 📩 **Forgot Password (Gmail OTP)** | Secure OTP-based recovery using Gmail SMTP |
-| 🧮 **4-bit Quantization Support** | Memory-optimized model loading (bits-and-bytes style workflow) |
-
----
-
-## 🛠 Admin Features
-
-Admin users get access to additional tools and dashboards:
-
-- Manage user roles and permissions (with a cap on number of admins).  
-- View **trending queries** and most active languages.  
-- Monitor **model usage** and mode distribution (generation vs explanation).  
-- Inspect **feedback statistics** — average ratings, common comments.  
-- Access **growth and usage charts** over time.  
-- Review **history logs** for debugging and quality control.  
-- Use an **Admin Panel** UI to navigate analytics and controls in one place.
+### Admin Features
+* **User Management:** View, suspend, delete, or promote users to Admin roles.
+* **Request Handling:** Approve or reject user requests for elevated privileges.
+* **Analytics Dashboard:**
+    * User signup trends.
+    * Daily login activity.
+    * Model popularity (Pie charts).
+    * Activity heatmaps (Day vs. Hour).
+* **Data Export:** Download Users, Logs, and History as CSV or PDF.
 
 ---
 
 # 🧩 Architecture
 
-CodeGenie is designed as a modular, secure, and analytics-aware platform.
+The application follows a modular architecture powered by Streamlit for the frontend and Python for backend logic, connecting to MongoDB Atlas for persistence.
 
-- **Frontend:**  
-  - Built with **Streamlit** for rapid, interactive UI.  
-  - Allows users to log in, generate/explain code, view history, and submit feedback.
-
-- **Backend & Services:**  
-  - Core logic written in **Python**.  
-  - Authentication handled with **JWT + bcrypt**.  
-  - Email / OTP services via **Gmail SMTP**.  
-  - SQLite database for users, history, and feedback.  
-
-- **AI & Processing Layer:**  
-  - Model wrappers for Python, JS, and SQL.  
-  - **AST parsing** for Python explanation.  
-  - 4-bit quantized models for memory-efficient execution.  
-  - Separate flows for **code generation** and **code explanation**.
-
-- **Security & Isolation:**  
-  - Token-based user isolation.  
-  - Minimal exposure of sensitive data.  
-  - Proper separation between user routes and admin tools.
-
-
+* **Frontend:** Streamlit (Single Page Application).
+* **Authentication:** Dual-layer auth using Local (Bcrypt+JWT) and Google OAuth2.
+* **Model Layer:** Local execution of Hugging Face Transformers (`pipeline`).
+* **Database:** Cloud-hosted MongoDB Atlas.
 - **System Architecture:**
   
-- <img width="1871" height="598" alt="image" src="https://github.com/user-attachments/assets/3cf20a45-f609-4c9a-ac7a-5483c1fb89f6" />
+- <img width="1284" height="961" alt="image" src="https://github.com/user-attachments/assets/0a476a22-1942-46c3-9df7-8f22a1124236" />
+
 
 - **ER Diagram**
 
-- <img width="669" height="895" alt="image" src="https://github.com/user-attachments/assets/2370eebf-47c6-498b-ab68-2302e7d6583d" />
+- <img width="1409" height="729" alt="image" src="https://github.com/user-attachments/assets/223af2e6-9853-48cc-b262-757a20066cd1" />
+
 
 ---
 
 # 🛠 Tech Stack
 
-| Component      | Technology |
-|----------------|-----------|
-| Frontend       | Streamlit |
-| Backend        | Python |
-| AI & NLP       | Hugging Face Transformers |
-| Models         | CodeBERT · Phi / Gemma · CodeLlama · DeepSeek-Coder · StarCoder2 |
-| Parsing        | Python `ast` module |
-| Database       | MongoDB |
-| Authentication | JWT + bcrypt |
-| Email          | Gmail SMTP (OTP delivery) |
-| Deployment     | Docker, Google Colab-friendly setup |
-| Optimization   | 4-bit model quantization for reduced VRAM usage |
+| Component | Technology |
+| :--- | :--- |
+| **Frontend/App** | Streamlit |
+| **Language** | Python 3.10+ |
+| **Database** | MongoDB Atlas (Pymongo) |
+| **ML/NLP** | Hugging Face Transformers, PyTorch |
+| **Authentication** | PyJWT, Bcrypt, Google Auth |
+| **Visualization** | Plotly Express, Plotly Graph Objects |
+| **Deployment** | Ngrok (Tunneling), Docker (Optional) |
+| **Email Services** | SMTP (Gmail) |
 
 ---
 
 # 🤖 Models Used
 
-| Model / Tool      | Use Case                          | Notes |
-|-------------------|-----------------------------------|-------|
-| **Phi / Gemma**   | Python explanation & generation   | Compact, instruction-tuned models for reasoning about Python |
-| **CodeBERT**      | JS & SQL understanding            | Token-level representation and embedding of code |
-| **CodeLlama**     | General code generation           | Handles multi-language prompts and refinement |
-| **DeepSeek-Coder**| Multi-language code suggestions   | Efficient pattern learning for common coding tasks |
-| **StarCoder2**    | Code rewriting & improvements     | Good for refactoring and completion-style tasks |
-| **AST Parsing**   | Python explanation engine         | Converts code into an Abstract Syntax Tree for structural insight |
-| **Custom Tokenizers / Pipelines** | JS & SQL explanations | Tailored token processing for non-Python languages |
-
-(Exact models and sizes can be tuned based on your hardware and use case.)
+| Model | Use Case | Notes |
+| :--- | :--- | :--- |
+| **DeepSeek-Coder-1.3B** | Code Generation | High performance on logic generation. |
+| **Microsoft Phi-2** | General Chat & Logic | Lightweight, efficient reasoning model. |
+| **CodeBART-Base** | Code Summarization | Used for non-Python explanations. |
+| **Python AST** | Structural Analysis | Native Python library for Abstract Syntax Trees. |
 
 ---
 
 # 📂 Project Structure
 
-```bash
+```text
 CodeGenie/
-│
-├── app.py                  # Main Streamlit UI entry point
-│
-├── backend/
-│   ├── auth.py             # JWT auth, signup/login, role management
-│   ├── generator.py        # Text-to-code generation logic
-│   ├── explainer.py        # Code explanation (Python AST + models)
-│   ├── models.py           # SQLite ORM / DB helpers
-│   ├── history.py          # User history and logging utilities
-│   ├── feedback.py         # Feedback storage & analytics helpers
-│   ├── admin.py            # Admin-specific routes and queries
-│   └── utils.py            # Shared helpers (email, OTP, etc.)
-│
-├── notebooks/
-│   └── CodeGenie_colab.ipynb   # Colab notebook version (optional)
-│
-├── requirements.txt        # Python dependencies
-├── Dockerfile              # Container setup
-├── .env.example            # Environment variable template
-│
-└── docs/
-    ├── architecture.png    # System architecture diagram
-    ├── er_diagram.png      # ER / database schema
-    └── screenshots/        # UI screenshots
+├── app.py                 # Main application entry point (Streamlit)
+├── utils/
+│   ├── db.py              # MongoDB connection logic
+│   └── __init__.py
+├── chat_history/          # JSON storage for chat sessions
+├── .env                   # Environment variables (Secrets)
+├── requirements.txt       # Python dependencies
+└── README.md              # Project documentation
 ```
-
 ---
 
 ## ❄️ Installation & Setup
 
 ### **Prerequisites**
-- Python 3.10+
+-  Python 3.10 or higher
+- MongoDB Atlas Account (Connection String)
+- Google Cloud Console Project (For OAuth - Optional)
 - Git
 - (Optional) Docker
 
@@ -254,126 +204,114 @@ CodeGenie/
 
 ### **Clone & Install**
 ```bash
+1)clone & Install:
+
 git clone <repo-link>
-cd CodeGenie
+cd Infosys_Springboard_CodeGenie
 pip install -r requirements.txt
+# Core libs: streamlit, pymongo, transformers, torch, bcrypt, pyjwt, google-auth
 JWT_SECRET_KEY=your_key_here
 SMTP_EMAIL=your_mail_here
 SMTP_PASSWORD=your_app_pass_here
+
+2)Configure Environment Variables:
+
+Create a file named .env in the root directory:
+MONGO_URI="mongodb+srv://<user>:<pass>@cluster.mongodb.net/..."
+JWT_SECRET="YourSuperSecretKey"
+HUGGINGFACE_TOKEN="hf_..."
+
+# Google OAuth (Optional)
+GOOGLE_CLIENT_ID="your_google_client_id"
+GOOGLE_CLIENT_SECRET="your_google_client_secret"
+APP_BASE_URL="http://localhost:8501"
+
+# Email SMTP (For OTP)
+SMTP_HOST="smtp.gmail.com"
+SMTP_PORT="587"
+SMTP_USER="your_email@gmail.com"
+SMTP_PASS="your_app_password"
+EMAIL_FROM="CodeGenie <no-reply@codegenie.ai>"
+
+# Admin Setup
+ADMIN_INITIAL_USER="admin@codegenie.com"
+ADMIN_INITIAL_PASS="admin123"
+
+3)Run Project
 streamlit run app.py
+
 ```
 
 # 📝 Usage Guide
 
-1. **Sign Up or Log In**
-   - Create a new account or log in with your existing credentials.
-   - Authentication is handled securely using JWT.
+1. **Sign Up / Login:** Create an account via Email/OTP or sign in with Google.
 
-2. **Choose What You Want To Do**
-   - **Generate Code** – turn natural language instructions into runnable code.
-   - **Explain Code** – paste a code snippet and get a structured explanation.
+2. **Select Module:**
+   -Go to 💻 Workspace to Generate or Explain code.
+   -Go to 🧠 General Chat to talk to the AI assistant.
 
-3. **Pick a Language**
-   - Python  
-   - JavaScript  
-   - SQL  
+3. **Generate:** Select "Generate Code", choose a model (e.g., DeepSeek), pick a language, and type your prompt.
 
-4. **Provide Input**
-   - For **Generate Code**: type your problem statement or description of what you want.
-   - For **Explain Code**: paste the code snippet you want clarified.
+4. **Explain:** Select "Explain Code", paste your snippet, and get an AST breakdown or AI summary.
 
-5. **View the Result**
-   - For explanations: see logic breakdown, step-by-step flow, and (where applicable) complexity notes.
-   - For generation: get clean, formatted code tailored to the selected language.
+5. **Review:** Rate the output (1-5 stars) to help improve the system.
 
-6. **Interact With the Output**
-   - Copy the generated code to your editor.
-   - Re-run or refine your query with more details.
-   - Toggle between **Generation** and **Explanation** modes directly from the UI.
-
-7. **Give Feedback**
-   - Rate the response quality (e.g., ⭐ 1–5).
-   - Optionally add a short text comment about what worked and what didn’t.
-
-8. **Explore Your History**
-   - Open the **History** section to:
-     - Revisit past prompts and outputs.
-     - Filter by language, mode (generation/explanation), or date.
-     - Re-run older queries with updated models.
-
+6. **History:** Check the ⟲ History tab to revisit past code snippets.
 ---
 
 # 🛡 Admin Controls
+**1. User Management**
+Admins have full control over the user base to ensure security and manage access levels.
+- **Role Management:** Admins can promote standard users to "Admin" status or revoke admin privileges from existing admins
+- **Account Suspension:** Admins can suspend or unsuspend user accounts, effectively blocking or restoring their access to the platform
+- **User Deletion:** There is functionality to permanently delete user accounts from the database
+- **Search & Filter:** Admins can search for specific users by username and filter the user list by role (Admin vs. User)
 
-Admin users get access to an extended, role-based control panel:
+**2. Request Handling**
+This module manages requests from users who want elevated privileges (e.g., requesting Admin access).
+- **Review Requests:** View a list of pending requests, including the user's reason for the request and the timestamp
+- **Approve/Reject:** Admins can explicitly approve or reject these requests. The system updates the request status and logs the action
+- **Reset Status:** Ability to mark a request back to "Pending" if it needs re-evaluation
 
-- **User & Role Management**
-  - View the list of all registered users.
-  - Promote or demote users between regular and admin roles (with a cap on total admins).
-  - Lock or unlock accounts if misuse is detected.
+**3. Analytics Dashboard**
+The admin panel includes a visualization suite to monitor system health and usage trends.
+- **User Growth:** A line chart displaying user signups over time
+- **Login Activity:** A bar chart showing daily login counts
+- **Model Popularity:** A pie chart illustrating which AI models (e.g., DeepSeek, Phi-2) are most frequently used
+- **Activity Heatmap:** A heatmap showing user activity intensity by day of the week and hour of the day
+- **Generations vs. Explanations:** A comparative chart showing the volume of code generation requests versus explanation requests
 
-- **System Usage Overview**
-  - Monitor how often each module is used (generation vs explanation).
-  - See active users, returning users, and new signups over time.
+**4. System Logs & Security**
+For auditing and security purposes, the admin panel provides deep visibility into system operations.
+- **Action Logging:** A searchable log viewer that tracks critical actions such as logins, failed authentication attempts, file uploads, password changes, and admin actions
+- **Filter Logs:** Logs can be filtered by username and date range to investigate specific incidents
+- **Export Logs:** Capability to download system logs as a CSV file for external analysis
 
-- **Language & Feature Analytics**
-  - Track which languages (Python / JS / SQL) are used most.
-  - Inspect the distribution of queries across code generation and code explanation.
+**5. Content Moderation (Reviews)**
+Admins can oversee user feedback to maintain quality and address issues.
+- **View Reviews:** Access a list of all user-submitted reviews, including ratings (1-5 stars) and written feedback
+- **Delete Reviews:** The ability to remove specific reviews from the system
 
-- **Feedback & Quality Monitoring**
-  - View average ratings over time.
-  - Drill into low-rated responses to understand pain points.
-  - Browse feedback comments to guide improvements.
-
-- **Audit & Logs**
-  - Access summarized logs of user actions (without exposing sensitive content).
-  - Use this data for debugging, moderation, and system tuning.
+**6. Data Export**
+To support reporting and external data analysis, the admin panel offers export functionality.
+- **CSV Exports:** One-click download of entire collections, including Users, History, Reviews, Requests, and Files
+- **PDF Reports:** If the `reportlab` library is installed, admins can generate formatted PDF reports of the user base
 
 ---
 
 # 📊 History & Analytics
 
-CodeGenie keeps structured logs so both users and admins can understand how the app is being used.
-
-### 🔐 What Gets Stored
-
-Each interaction can include:
-
-- User identifier
-- Code snippet or prompt (sanitized/limited as configured)
-- Model output (generated code or explanation)
-- Selected language (Python / JS / SQL)
-- Mode (Code Generation / Code Explanation)
-- Timestamp of the request
-- Feedback rating and optional text comment
-
-### 📈 What You Can See
-
-**For Users:**
-
-- A personal **History** view that allows you to:
-  - Scroll through past sessions.
-  - Re-open previous prompts.
-  - Copy old outputs.
-  - Compare how explanations or generations improve over time.
-
-**For Admins (Analytics Dashboard):**
-
-- **Trend charts**
-  - Daily/weekly request counts.
-  - Growth of active users.
-- **Language usage stats**
-  - Popularity of Python vs JS vs SQL.
-- **Feature usage**
-  - How often “Generate” vs “Explain” is used.
-- **Feedback insights**
-  - Average rating per time window.
-  - Word cloud or summary of common feedback terms.
-- **System health indicators**
-  - Error rates, failed requests, or timeout counts (if tracked).
-
-These insights help guide improvements to the models, UI, and user experience.
-
+**User History:** Every generation or explanation is stored with:
+- Timestamp
+- Model Used
+- Response Time (ms)
+- Result & Prompt
+  
+**Admin Dashboard:** Admins can visualize:
+- 📈 User Growth: Line charts of signups.
+- 🥧 Model Usage: Pie charts showing which AI models are most popular.
+- 🔥 Activity Heatmap: When users are most active during the week.
+- 📝 Logs: System-wide audit logs for security.
 ---
 
 # 📸 Screenshots
