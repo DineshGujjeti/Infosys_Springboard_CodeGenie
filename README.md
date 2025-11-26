@@ -113,7 +113,7 @@ The result is an assistant that feels more intentional, more transparent, and mo
 ### User Capabilities
 | Module | Description | Status |
 | :--- | :--- | :--- |
-| **Secure Authentication** | JWT login, Google OAuth integration, and OTP-based password recovery via Email. | ☑ |
+| **Secure Authentication** | JSON Web Token(JWT) login, Google OAuth integration, and OTP-based password recovery via Email. | ☑ |
 | **Code Generator** | Converts natural language prompts into Python, JavaScript, SQL, C++, etc. | ☑ |
 | **Code Explainer** | Parses Python using AST for structural breakdown and AI for logic explanation. | ☑ |
 | **AI Chatbot** | Context-aware general coding assistant (powered by Phi-2). | ☑ |
@@ -137,7 +137,7 @@ The result is an assistant that feels more intentional, more transparent, and mo
 The application follows a modular architecture powered by Streamlit for the frontend and Python for backend logic, connecting to MongoDB Atlas for persistence.
 
 * **Frontend:** Streamlit (Single Page Application).
-* **Authentication:** Dual-layer auth using Local (Bcrypt+JWT) and Google OAuth2.
+* **Authentication:** Dual-layer auth using Local (Bcrypt+JSON Web Token(JWT)) and Google OAuth2.
 * **Model Layer:** Local execution of Hugging Face Transformers (`pipeline`).
 * **Database:** Cloud-hosted MongoDB Atlas.
 - **System Architecture:**
@@ -163,7 +163,7 @@ The application follows a modular architecture powered by Streamlit for the fron
 | **Authentication** | PyJWT, Bcrypt, Google Auth |
 | **Visualization** | Plotly Express, Plotly Graph Objects |
 | **Deployment** | Ngrok (Tunneling), Docker (Optional) |
-| **Email Services** | SMTP (Gmail) |
+| **Email Services** | Simple Mail Transfer Protocol(SMTP Gmail) |
 
 ---
 
