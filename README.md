@@ -321,12 +321,41 @@ To support reporting and external data analysis, the admin panel offers export f
 _Actual UI screenshots will be added soon._
 
 
-- Login & Signup  
-- Main Dashboard  
-- Code Generation Module  
-- Code Explanation Module  
-- Admin Analytics Dashboard  
-- History & Logs View  
+- Login & Signup
+  <img width="1897" height="900" alt="image" src="https://github.com/user-attachments/assets/2b36bcb5-2083-4533-9ee5-990bded05887" />
+- Main Dashboard
+  <img width="1910" height="911" alt="image" src="https://github.com/user-attachments/assets/029aff08-6cb8-459d-8868-38732622ddaa" />
+- Code Generation Module
+  <img width="1867" height="870" alt="image" src="https://github.com/user-attachments/assets/f047d675-ff42-4cb2-b7a8-75a2db14d139" />
+- Code Explanation Module
+  <img width="1582" height="887" alt="image" src="https://github.com/user-attachments/assets/7c5f9998-6b52-4966-84cb-23e8bf651a7a" />
+  <img width="1900" height="910" alt="image" src="https://github.com/user-attachments/assets/c37d469f-2579-4bcb-a918-230fbb6b86a5" />
+- Voice Explainer
+  <img width="1900" height="910" alt="image" src="https://github.com/user-attachments/assets/5d477bcd-87b4-4209-88a8-177ba19fefce" />
+  <img width="1468" height="556" alt="image" src="https://github.com/user-attachments/assets/358e3553-c064-4d5a-818a-d7bd848180a2" />
+  <img width="1904" height="880" alt="image" src="https://github.com/user-attachments/assets/cefd9908-183a-486e-a8ab-da4df9971a2a" />
+- Profile Page
+  <img width="1908" height="900" alt="image" src="https://github.com/user-attachments/assets/354ccbdc-db4f-4d92-9383-7b928d461bfa" />
+  <img width="1820" height="808" alt="image" src="https://github.com/user-attachments/assets/5b8697b2-5549-44b1-a75d-81a5da738de5" />
+  <img width="1552" height="821" alt="image" src="https://github.com/user-attachments/assets/7884115f-410f-4271-8b5a-fb389430f6e5" />
+  <img width="1496" height="810" alt="image" src="https://github.com/user-attachments/assets/a3a26253-0d0f-4e18-831a-5bd1e64e9789" />
+  <img width="1454" height="587" alt="image" src="https://github.com/user-attachments/assets/0868329d-dd3b-4282-86e9-7051943d859e" />
+  <img width="1561" height="697" alt="image" src="https://github.com/user-attachments/assets/f307c2ff-d644-4218-be85-45b6242caebc" />
+  <img width="1531" height="907" alt="image" src="https://github.com/user-attachments/assets/5d347bbc-3fd3-4f34-b198-94b7a8c25c58" />
+  <img width="1478" height="854" alt="image" src="https://github.com/user-attachments/assets/a90ada86-4f41-49aa-b92a-b90ffddd41ec" />
+
+- Admin Analytics Dashboard
+  <img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/781ff087-d839-417b-953c-5c889933b009" />
+  <img width="1911" height="834" alt="image" src="https://github.com/user-attachments/assets/b2efa6f6-4f1f-4400-b32e-667fb0411fb5" />
+  <img width="1708" height="573" alt="image" src="https://github.com/user-attachments/assets/c3741477-5985-47da-ae3a-5225e4992ee0" />
+  <img width="1708" height="551" alt="image" src="https://github.com/user-attachments/assets/84eda51a-e763-4c06-b11a-6dd129d450d4" />
+  <img width="1714" height="542" alt="image" src="https://github.com/user-attachments/assets/8aa7a9e4-eeaa-417c-ba30-3ce19844456e" />
+  <img width="1911" height="824" alt="image" src="https://github.com/user-attachments/assets/603271ed-bd5d-4874-a5c0-ed5b433d0b07" />
+- History & Logs View
+  <img width="1870" height="880" alt="image" src="https://github.com/user-attachments/assets/018ae6d0-aabe-4fb7-9371-d620564c3850" />
+  <img width="1920" height="892" alt="image" src="https://github.com/user-attachments/assets/22af1ad6-e040-4029-b7ff-392e21eb4222" />
+  <img width="1876" height="870" alt="image" src="https://github.com/user-attachments/assets/89b8a147-cb62-49a8-9072-01864617f90f" />
+
 
 
 ---
