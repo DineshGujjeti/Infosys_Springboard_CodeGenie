@@ -387,11 +387,11 @@ Planned and potential future enhancements for CodeGenie:
 
 | Name | Role | Responsibilities |
 |------|------|------------------|
-| Add Name | ML Engineer | model integration, quantization |
-| Add Name | Backend Developer | APIs, database, auth, OTP system |
-| Add Name | Frontend Developer | Streamlit UI & user experience |
-| Add Name | Documentation Lead | README, architecture diagrams |
-| Add Name | Lead | PPTs |
+| Krishna | ML Engineer | model integration, quantization |
+| Srivani | Backend Developer | APIs, database, auth, OTP system |
+| Mukesh M | Frontend Developer | Streamlit UI & user experience |
+| Dinesh | Documentation Lead | README, architecture diagrams |
+| Piyushmani Tiwari | Lead | PPTs |
 
 
 ---
