@@ -19,7 +19,7 @@ Helping developers understand code the way humans do — with clarity, structure
 
 | Category            | Link          |
 |--------------------|---------------|
-| 🎥 Demo Video      | Coming Soon   |
+| 🎥 Demo Video      | https://limewire.com/d/MMxhM#XC4Byyraxs |
 | 🐳 Docker Support | Yes           |
 | 💡 Supported Languages | Python · JavaScript · SQL |
 
