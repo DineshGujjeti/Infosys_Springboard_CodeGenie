@@ -145,11 +145,6 @@ The application follows a modular architecture powered by Streamlit for the fron
 - <img width="1284" height="961" alt="image" src="https://github.com/user-attachments/assets/0a476a22-1942-46c3-9df7-8f22a1124236" />
 
 
-- **ER Diagram**
-
-- <img width="1409" height="729" alt="image" src="https://github.com/user-attachments/assets/223af2e6-9853-48cc-b262-757a20066cd1" />
-
-
 ---
 
 # 🛠 Tech Stack
@@ -389,7 +384,7 @@ Planned and potential future enhancements for CodeGenie:
 |--------------------|----------------------|----------------------------------------------------|
 | **Mukesh M**       | ML Engineer          | Model integration, quantization                    |
 | **Srivani**        | Backend Developer    | APIs, database management, authentication, OTP system |
-| **Krishna**        | Devops Engineer      | Docker & Deployment                                 |
+| **Samya**        | Devops Engineer      | Docker & Deployment                                 |
 | **Dinesh**         | Frontend Developer   | Streamlit Interface & UI Development
 | **Piyushmani Tiwari** | Architecture Design|README writing, architecture diagrams, documentation|
 
