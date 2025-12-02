@@ -325,7 +325,6 @@ _Actual UI screenshots will be added soon._
   <img width="1867" height="870" alt="image" src="https://github.com/user-attachments/assets/f047d675-ff42-4cb2-b7a8-75a2db14d139" />
 - Code Explanation Module
   <img width="1582" height="887" alt="image" src="https://github.com/user-attachments/assets/7c5f9998-6b52-4966-84cb-23e8bf651a7a" />
-  <img width="1900" height="910" alt="image" src="https://github.com/user-attachments/assets/c37d469f-2579-4bcb-a918-230fbb6b86a5" />
 - Profile Page
   <img width="1919" height="950" alt="image" src="https://github.com/user-attachments/assets/325ff3aa-675c-475a-a7b4-29f59f406328" />
   <img width="1820" height="808" alt="image" src="https://github.com/user-attachments/assets/5b8697b2-5549-44b1-a75d-81a5da738de5" />
