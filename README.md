@@ -326,10 +326,6 @@ _Actual UI screenshots will be added soon._
 - Code Explanation Module
   <img width="1582" height="887" alt="image" src="https://github.com/user-attachments/assets/7c5f9998-6b52-4966-84cb-23e8bf651a7a" />
   <img width="1900" height="910" alt="image" src="https://github.com/user-attachments/assets/c37d469f-2579-4bcb-a918-230fbb6b86a5" />
-- Voice Explainer
-  <img width="1900" height="910" alt="image" src="https://github.com/user-attachments/assets/5d477bcd-87b4-4209-88a8-177ba19fefce" />
-  <img width="1468" height="556" alt="image" src="https://github.com/user-attachments/assets/358e3553-c064-4d5a-818a-d7bd848180a2" />
-  <img width="1904" height="880" alt="image" src="https://github.com/user-attachments/assets/cefd9908-183a-486e-a8ab-da4df9971a2a" />
 - Profile Page
   <img width="1919" height="950" alt="image" src="https://github.com/user-attachments/assets/325ff3aa-675c-475a-a7b4-29f59f406328" />
   <img width="1820" height="808" alt="image" src="https://github.com/user-attachments/assets/5b8697b2-5549-44b1-a75d-81a5da738de5" />
