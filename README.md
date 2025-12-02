@@ -169,7 +169,7 @@ The application follows a modular architecture powered by Streamlit for the fron
 | :--- | :--- | :--- |
 | **DeepSeek-Coder-1.3B** | Code Generation | High performance on logic generation. |
 | **Microsoft Phi-2.7B** | General Chat & Logic | Lightweight, efficient reasoning model. |
-| **CodeBART-Base** | Code Summarization | Used for non-Python explanations. |
+| **Gemini API** | General Chat | Used for General Chats. |
 | **Python AST** | Structural Analysis | Native Python library for Abstract Syntax Trees. |
 
 ---
