@@ -141,8 +141,9 @@ The application follows a modular architecture powered by Streamlit for the fron
 * **Model Layer:** Local execution of Hugging Face Transformers (`pipeline`).
 * **Database:** Cloud-hosted MongoDB Atlas.
 - **System Architecture:**
-  
 - <img width="1284" height="961" alt="image" src="https://github.com/user-attachments/assets/0a476a22-1942-46c3-9df7-8f22a1124236" />
+-<img width="1462" height="760" alt="image" src="https://github.com/user-attachments/assets/3ab7dd02-7025-4397-819c-b2dd372fa423" />
+
 
 
 ---
@@ -167,7 +168,7 @@ The application follows a modular architecture powered by Streamlit for the fron
 | Model | Use Case | Notes |
 | :--- | :--- | :--- |
 | **DeepSeek-Coder-1.3B** | Code Generation | High performance on logic generation. |
-| **Microsoft Phi-2** | General Chat & Logic | Lightweight, efficient reasoning model. |
+| **Microsoft Phi-2.7B** | General Chat & Logic | Lightweight, efficient reasoning model. |
 | **CodeBART-Base** | Code Summarization | Used for non-Python explanations. |
 | **Python AST** | Structural Analysis | Native Python library for Abstract Syntax Trees. |
 
@@ -317,7 +318,7 @@ _Actual UI screenshots will be added soon._
 
 
 - Login & Signup
-  <img width="1897" height="900" alt="image" src="https://github.com/user-attachments/assets/2b36bcb5-2083-4533-9ee5-990bded05887" />
+  <img width="1876" height="685" alt="image" src="https://github.com/user-attachments/assets/a35fab60-a553-4f27-8de0-844c03992bc0" />
 - Main Dashboard
   <img width="1910" height="911" alt="image" src="https://github.com/user-attachments/assets/029aff08-6cb8-459d-8868-38732622ddaa" />
 - Code Generation Module
@@ -330,13 +331,13 @@ _Actual UI screenshots will be added soon._
   <img width="1468" height="556" alt="image" src="https://github.com/user-attachments/assets/358e3553-c064-4d5a-818a-d7bd848180a2" />
   <img width="1904" height="880" alt="image" src="https://github.com/user-attachments/assets/cefd9908-183a-486e-a8ab-da4df9971a2a" />
 - Profile Page
-  <img width="1908" height="900" alt="image" src="https://github.com/user-attachments/assets/354ccbdc-db4f-4d92-9383-7b928d461bfa" />
+  <img width="1919" height="950" alt="image" src="https://github.com/user-attachments/assets/325ff3aa-675c-475a-a7b4-29f59f406328" />
   <img width="1820" height="808" alt="image" src="https://github.com/user-attachments/assets/5b8697b2-5549-44b1-a75d-81a5da738de5" />
   <img width="1552" height="821" alt="image" src="https://github.com/user-attachments/assets/7884115f-410f-4271-8b5a-fb389430f6e5" />
   <img width="1496" height="810" alt="image" src="https://github.com/user-attachments/assets/a3a26253-0d0f-4e18-831a-5bd1e64e9789" />
   <img width="1454" height="587" alt="image" src="https://github.com/user-attachments/assets/0868329d-dd3b-4282-86e9-7051943d859e" />
   <img width="1561" height="697" alt="image" src="https://github.com/user-attachments/assets/f307c2ff-d644-4218-be85-45b6242caebc" />
-  <img width="1531" height="907" alt="image" src="https://github.com/user-attachments/assets/5d347bbc-3fd3-4f34-b198-94b7a8c25c58" />
+  <img width="1895" height="852" alt="image" src="https://github.com/user-attachments/assets/828923c5-7dd9-4e5b-81e7-10eecea8a662" />
   <img width="1478" height="854" alt="image" src="https://github.com/user-attachments/assets/a90ada86-4f41-49aa-b92a-b90ffddd41ec" />
 
 - Admin Analytics Dashboard
